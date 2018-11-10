@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="eli.tech.wallri.Activity.DynamicWallpaperActivity.DynamicHomeActivity">
+
+    <eli.tech.wallri.view.CustomCoordinatorLayout
+        android:id="@+id/DynamicCoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/DynamicToolbarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_title"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/Dynamictoobar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/shape_title"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:title=" ">
+
+                <ImageView
+                    android:id="@+id/Dynamictoobar_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/menu" />
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/wallri" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/toWallpaperImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right"></com.facebook.drawee.view.SimpleDraweeView>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/DynamicHomePageTapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_title"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextAppearance="@style/CustomTabLayoutTextAppearance"
+                app:tabTextColor="@android:color/white" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <eli.tech.wallri.view.CustomViewpager
+            android:id="@+id/DynamicHomePageViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </eli.tech.wallri.view.CustomViewpager>
+
+
+        <RelativeLayout
+            android:id="@+id/DynamicfabButtonBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:background="@drawable/shape_back">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/DynamicfabButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                ></com.facebook.drawee.view.SimpleDraweeView>
+
+
+        </RelativeLayout>
+    </eli.tech.wallri.view.CustomCoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeFragmentfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"></RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wallri</string>
+    <string name="SetUpSuccess">SUCCESS</string>
+    <string name="classify">CATEGORY</string>
+    <string name="hot">POPULAR</string>
+    <string name="news">NEW</string>
+    <string name="back">Are you sure you are going to leave us</string>
+    <string name="backtrue">Yes</string>
+    <string name="backfalse">No</string>
+    <string name="Prompt">Prompt</string>
+    <string name="SettingUpDesktopWallpaper">Home Screen</string>
+    <string name="SetUpDesktopWallpaperAndLockWallpaperAtTheSameTime">Home and Lock Screen</string>
+    <string name="toast">Top</string>
+    <string name="Collection">Liked</string>
+    <string name="ScavengingCaching">Clear Cache</string>
+    <string name="Mark">Rate the app</string>
+    <string name="score">It is good to give us a app score!</string>
+    <string name="Determine">Determine</string>
+    <string name="Success">Success!</string>
+    <string name="done">Done</string>
+    <string name="Rating">RATING</string>
+    <string name="ring">Ring</string>
+    <string name="facebook_app_id">192825138120325</string>
+    <string name="fb_login_protocol_scheme">fb192825138120325</string>
+    <string name="collection">COLLECTION</string>
+    <string name="DynamicWallpaper">Dynamic Wallpaper</string>
+</resources>

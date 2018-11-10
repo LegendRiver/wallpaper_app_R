@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AnimationFade1"> 
+          
+            <!-- PopupWindow从下弹出的效果 -->  
+            <item name="android:windowEnterAnimation">@anim/in_bottom</item>  
+            <item name="android:windowExitAnimation">@anim/out_bottom</item>  
+    </style>
+
+    <style name="AppThemeBlue" parent="AppTheme">
+        <item name="colorPrimary">@color/color_primary_blue</item>
+        <item name="colorPrimaryDark">@color/color_primary_blue</item>
+        <item name="colorAccent">@color/color_primary_blue</item>
+    </style>
+
+
+    <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:typeface">serif</item>
+
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <!--parent设置为启动页的theme-->
+    <style name="AppTheme.customeTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/white</item>
+    </style>
+
+    <!-- 自定义dialog的样式 -->
+
+
+</resources>

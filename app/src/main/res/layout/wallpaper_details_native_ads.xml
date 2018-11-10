@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/WallPaper_Details_Feed_Native_ProgressBar"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/WallPaper_Details_Feed_Native_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <com.facebook.ads.MediaView
+                android:id="@+id/WallPaper_Details_Feed_Native_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+        </LinearLayout>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/WallPaper_Details_Feed_Native_Adicon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            fresco:roundedCornerRadius="10dp" />
+
+
+        <TextView
+            android:id="@+id/WallPaper_Details_Feed_Native_Adtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="你好"
+            android:textSize="24sp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/WallPaper_Details_Feed_Native_Sponsored_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Ad"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+
+                android:id="@+id/WallPaper_Details_Feed_Native_Container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/WallPaper_Details_Feed_Native_Sponsored_Label"
+                android:gravity="left"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/WallPaper_Details_Feed_Native_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶算得上是水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/WallPaper_Details_Feed_Native_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/facebook_ring_ad_banner_native_button_shape"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:text="下载"
+            android:textColor="#c2c1c1"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

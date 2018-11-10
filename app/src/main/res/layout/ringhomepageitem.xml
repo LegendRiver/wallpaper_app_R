@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/Ring_Homepage_Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        ></com.facebook.drawee.view.SimpleDraweeView>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/Ring_Homepage_Image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Ring_Homepage_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello world"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Ring_Homepage_Title_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Ring_Homepage_Title"
+            android:text="hello"
+            android:textSize="8sp" />
+
+        <ProgressBar
+            android:id="@+id/Ring_Progress_Bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:max="100"
+            />
+    </LinearLayout>
+
+    <com.example.xlhratingbar_lib.XLHRatingBar xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+        android:layout_marginRight="20dp"
+        android:id="@+id/Ring_Homepage_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        xlhRatingBar:starCount="5"
+        xlhRatingBar:widthAndHeight="15dp" />
+
+
+</RelativeLayout>

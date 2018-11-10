@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "941474593318",
+    "firebase_url": "https://eli-wallri.firebaseio.com",
+    "project_id": "eli-wallri",
+    "storage_bucket": "eli-wallri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941474593318:android:3e9961caa06e90d7",
+        "android_client_info": {
+          "package_name": "eli.tech.wallri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941474593318-ublh77uid0ngo7iun4bbb649cdvrojfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFYFGWcIOlztWDlVyB6DJZFLLzAu3ZIR4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

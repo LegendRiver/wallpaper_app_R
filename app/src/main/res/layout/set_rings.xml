@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RingPopuWindow_Rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ButtonbackgroundColor">
+
+
+        <RelativeLayout
+            android:id="@+id/RingLowerPopuwindow_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp">
+
+                <LinearLayout
+                    android:id="@+id/RingSetting_up_desktop_wallpaper_Line"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/phone" />
+
+                    <TextView
+                        android:id="@+id/RingSetting_up_desktop_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Set Ringer Tone"
+                        android:textColor="@color/ButtonTextColor"
+                        android:textSize="10sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/RingSet_up_desktop_CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:checked="true"
+                        android:theme="@style/My_CheckBox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/RingSet_up_desktop_and_lock_wallpaper_Line"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/RingSetting_up_desktop_wallpaper_Line"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/lock_screen" />
+
+                    <TextView
+                        android:id="@+id/RingSet_up_desktop_and_lock_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Setting up notifications "
+                        android:textColor="@color/ButtonTextColor"
+                        android:textSize="10sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/RingSet_up_desktop_and_lock_CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:theme="@style/My_CheckBox" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/set_btu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RingLowerPopuwindow_RadioGroup"
+            android:layout_centerInParent="true"
+            android:background="@drawable/setdone"
+            android:paddingBottom="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="5dp"
+            android:text="@string/done"
+            android:textColor="@color/ButtonTextColor" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/set_btu"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Ringad_textView_1"
+                android:layout_width="97dp"
+                android:layout_height="26dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wallri" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

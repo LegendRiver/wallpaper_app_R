@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eli.tech.wallri.Activity.FinishFailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:background="#c14240"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:id="@+id/FailFinishActivityBackImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_back">
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/back" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/FailFinishImage"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/FailFinishActivityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WHOOPS"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/FailSigntext"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/FailFinishActivityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="      It looks like you lost connection       \n  when trying to save your stuff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/FailFinish_button"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:background="@drawable/fail_finish_shape"
+                android:textSize="24sp"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/FailSigntext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRY AGAIN!"
+                android:textColor="#ffffff"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
